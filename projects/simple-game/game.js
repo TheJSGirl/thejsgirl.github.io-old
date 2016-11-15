@@ -24,40 +24,56 @@ function init() {
     
     // defining enemy object
     enemy = {
-        x:150,
-        y:70,
-        w:50,
-        h:50,
-        speedY:5,
+        x: 150,
+        y: 70,
+        w: 50,
+        h: 50,
+   speedY: 5
     };
 
     // the player object
     player = {
-        x:10,
-        y:GAME_HEIGHT/2,
-        w:50,
-        h:50,
-        speedX:5,
-        isMoving:false,
+        x: 10,
+        y: GAME_HEIGHT / 2,
+        w: 50,
+        h: 50,
+        speedX: 5,
+        isMoving : false
     };
     
     // the ball object
     ball = {
-        x:GAME_WIDTH-50,
-        y:GAME_HEIGHT/2,
-        w:50,
-        h:50
+        x: GAME_WIDTH - 50,
+        y: GAME_HEIGHT / 2,
+        w: 50,
+        h: 50
     };
 
     // adding mouse press event
-    canvas.addEventListener('mousedown',function(){
-        player.isMoving =true;                            
-    });
+    // canvas.addEventListener('mousedown', function () {
+    //     player.isMoving = true;                            
+    // });
 
-    // adding the mouse button release event
-    canvas.addEventListener('mouseup', function(){
-    player.isMoving = false;
-    });
+    // // adding the mouse button release event
+    // canvas.addEventListener('mouseup', function () {
+    // player.isMoving = false;
+    // });
+    
+
+    $(document).ready(function(){
+        $('#mycanvas').on('touchstart touchmove mousedown', function(e){
+            player.isMoving = true;
+        });
+    })
+
+
+    $(document).ready(function(){
+        $('#mycanvas').on('touchend mouseup', function(e){
+            player.isMoving = false;
+        });  
+    })
+  
+  
     
     //loading images
     playerImage = new Image();
