@@ -46,6 +46,11 @@ body {
     background-color: #fff;
 }
 
+
+.progress {
+    background-color: #bdc3c7;
+}
+
 p.skill-name {
     text-transform: uppercase;
     font-weight: bolder;
