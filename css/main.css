@@ -1,0 +1,60 @@
+header {
+    background-color: #2C3E50 !important;
+}
+
+#about {
+    background-color: #00aedb;
+}
+
+#contact {
+    background-color: #9b59b6;
+}
+
+a.navbar-brand {
+    text-transform: none;
+}
+
+
+header hr.star-light:after {
+    color: #fff;
+    background-color: #2C3E50 ;
+}
+
+#about hr.star-light:after{
+    background-color: #00aedb;
+}
+
+.img-responsive
+{
+    height: 200px;
+    width: 200px;
+
+}
+
+#list
+{
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+
+#list span {
+    left: -20px;
+}
+
+body {
+    background-color: #fff;
+}
+
+p.skill-name {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#portfolio div.progress {
+    height: 30px;
+}
+
+.progress-bar {
+    background-color: #c0392b;
+}
