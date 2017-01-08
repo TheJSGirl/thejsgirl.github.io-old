@@ -29,7 +29,7 @@
 
 			var apikey="57bded1ce073240af86247ed285ffc79";
 
-			var url ='https://api.openweathermap.org/data/2.5/weather?q='+ cityName + '&units=metric&appid='+ apikey;
+			var url ='http://api.openweathermap.org/data/2.5/weather?q='+ cityName + '&units=metric&appid='+ apikey;
 
 			var method= "GET";
 
